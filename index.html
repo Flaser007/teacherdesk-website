@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeacherDesk — IEP &amp; 504 Accommodations Monitor &amp; Grading Workspace for Canvas</title>
+  <meta name="description" content="TeacherDesk ensures every IEP and 504 accommodation is honored in Canvas LMS—with automated deadline math, human-in-the-loop grading review, and learning-gap analytics.">
+  <link rel="canonical" href="https://teacherdesk.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TeacherDesk — Every Accommodation Honored. Zero Grading Guesswork.">
+  <meta property="og:description" content="IEP &amp; 504 deadline math, violation detection, human-approved Canvas grading, and learning-gap insights built with FERPA-first privacy.">
+  <meta property="og:url" content="https://teacherdesk.org/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="nav-row">
+        <a class="brand" href="#top" aria-label="TeacherDesk home">
+          <span class="brand-mark" aria-hidden="true">TD</span>
+          <span class="brand-text">
+            <span class="brand-name">TeacherDesk</span>
+            <span class="brand-sub">Accommodations &amp; Grading</span>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#modules">Modules</a>
+          <a href="#rules">Compliance Rules</a>
+          <a href="#workflow">How It Works</a>
+          <a href="#privacy">FERPA Privacy</a>
+          <a href="#contact">Request Access</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn primary sm" href="https://ecr.teacherdesk.org" target="_blank" rel="noopener">Open TeacherDesk →</a>
+          <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#modules">Modules</a>
+        <a href="#rules">Compliance Rules</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#privacy">FERPA Privacy</a>
+        <a href="#contact">Request Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="pill"><span class="pill-dot" aria-hidden="true"></span>Canvas LMS · IEP &amp; 504 Accommodations · FERPA-First</span>
+          <h1>Every accommodation honored. <em>Zero</em> grading guesswork.</h1>
+          <p class="lead">TeacherDesk brings IEP and 504 deadline tracking, human-approved Canvas grading, and skill-level learning gaps into one calm workspace—so nothing posts to Canvas without your review.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://ecr.teacherdesk.org" target="_blank" rel="noopener">Open TeacherDesk →</a>
+            <a class="btn" href="#contact">Request School Access</a>
+          </div>
+          <div class="trust-row">
+            <span class="trust-item"><span class="trust-check" aria-hidden="true">✓</span>No automatic Canvas writes</span>
+            <span class="trust-item"><span class="trust-check" aria-hidden="true">✓</span>Neutral feedback linter</span>
+            <span class="trust-item"><span class="trust-check" aria-hidden="true">✓</span>Privacy keys &amp; screen-share blur</span>
+          </div>
+        </div>
+
+        <div class="preview-shell" id="preview-shell" aria-label="Interactive TeacherDesk workspace preview using illustrative placeholder records">
+          <div class="preview-frame">
+            <div class="mock-rail" aria-label="Workspace modules">
+              <div class="mock-rail-logo" aria-hidden="true">TD</div>
+              <button class="mock-rail-btn active" type="button" data-mock-tab="acc" title="Accommodations Monitor" aria-label="Show Accommodations Monitor preview">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </button>
+              <button class="mock-rail-btn" type="button" data-mock-tab="timeline" title="Extension Timeline" aria-label="Show Extension Timeline preview">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </button>
+              <button class="mock-rail-btn" type="button" data-mock-tab="grading" title="Grading Queue" aria-label="Show Grading Queue preview">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </button>
+              <button class="mock-rail-btn" type="button" data-mock-tab="gaps" title="Learning Gaps" aria-label="Show Learning Gaps preview">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 3 5-6"/></svg>
+              </button>
+              <div class="mock-rail-foot">
+                <span class="mock-dot" title="Sample preview"></span>
+              </div>
+            </div>
+
+            <div class="mock-main">
+              <div class="mock-topbar">
+                <div class="mock-tabs" role="tablist" aria-label="Preview views">
+                  <button class="mock-tab active" type="button" role="tab" aria-selected="true" data-mock-tab="acc">Accommodations</button>
+                  <button class="mock-tab" type="button" role="tab" aria-selected="false" data-mock-tab="timeline">Timeline</button>
+                  <button class="mock-tab" type="button" role="tab" aria-selected="false" data-mock-tab="grading">Grading Queue</button>
+                  <button class="mock-tab" type="button" role="tab" aria-selected="false" data-mock-tab="gaps">Learning Gaps</button>
+                </div>
+                <div class="mock-controls">
+                  <button class="mock-toggle on" type="button" id="mock-privacy-btn" aria-pressed="true">Keys: On</button>
+                  <button class="mock-toggle" type="button" id="mock-blur-btn" aria-pressed="false">Blur</button>
+                </div>
+              </div>
+
+              <!-- Panel 1: Accommodations -->
+              <div class="mock-panel active" data-mock-panel="acc">
+                <div class="mock-hero-banner">
+                  <div>
+                    <span class="mock-pill">Sample preview · Privacy keys active</span>
+                    <h2>Accommodation check: <em>9 items</em> need review</h2>
+                    <p>4 open flags · 2 timing holds · 3 proposed grade updates awaiting your approval</p>
+                  </div>
+                </div>
+
+                <div class="mock-kpis">
+                  <div class="mock-kpi">
+                    <div class="mock-kpi-label">Active plans</div>
+                    <div class="mock-kpi-val">18</div>
+                    <div class="mock-kpi-sub">IEP &amp; 504 rosters</div>
+                  </div>
+                  <div class="mock-kpi">
+                    <div class="mock-kpi-label">Open windows</div>
+                    <div class="mock-kpi-val">6</div>
+                    <div class="mock-kpi-sub">Do not mark missing</div>
+                  </div>
+                  <div class="mock-kpi">
+                    <div class="mock-kpi-label">Late flags</div>
+                    <div class="mock-kpi-val">3</div>
+                    <div class="mock-kpi-sub">V1 &amp; V3 checks</div>
+                  </div>
+                  <div class="mock-kpi">
+                    <div class="mock-kpi-label">Quiz checks</div>
+                    <div class="mock-kpi-val">2</div>
+                    <div class="mock-kpi-sub">V6 timer moderation</div>
+                  </div>
+                </div>
+
+                <div class="mock-bento-2">
+                  <div class="mock-card">
+                    <div class="mock-card-head">
+                      <h3>Violations by rule</h3>
+                      <span class="tag mint">This week</span>
+                    </div>
+                    <div class="mock-bars" aria-label="Rule breakdown chart">
+                      <div class="mock-bar-col"><span class="mock-bar-num">1</span><div class="mock-bar-pill" style="height:34%"></div><span class="mock-bar-lbl">V1</span></div>
+                      <div class="mock-bar-col"><span class="mock-bar-num">1</span><div class="mock-bar-pill" style="height:34%"></div><span class="mock-bar-lbl">V2</span></div>
+                      <div class="mock-bar-col"><span class="mock-bar-num">2</span><div class="mock-bar-pill" style="height:56%"></div><span class="mock-bar-lbl">V3</span></div>
+                      <div class="mock-bar-col"><span class="mock-bar-num">0</span><div class="mock-bar-pill warn" style="height:12%"></div><span class="mock-bar-lbl">V4</span></div>
+                      <div class="mock-bar-col"><span class="mock-bar-num">1</span><div class="mock-bar-pill" style="height:34%"></div><span class="mock-bar-lbl">V5</span></div>
+                      <div class="mock-bar-col"><span class="mock-bar-num">2</span><div class="mock-bar-pill" style="height:56%"></div><span class="mock-bar-lbl">V6</span></div>
+                      <div class="mock-bar-col"><span class="mock-bar-num">2</span><div class="mock-bar-pill warn" style="height:56%"></div><span class="mock-bar-lbl">H</span></div>
+                    </div>
+                  </div>
+
+                  <div class="mock-card">
+                    <div class="mock-card-head">
+                      <h3>Action queue</h3>
+                      <span class="tag">Synthetic data</span>
+                    </div>
+                    <div class="mock-list">
+                      <div class="mock-item">
+                        <div>
+                          <strong class="mock-student" data-key="STU-001" data-name="Jordan M. (Demo)">STU-001</strong>
+                          <span>V1 Late deduction inside window</span>
+                        </div>
+                        <span class="tag bad">V1</span>
+                      </div>
+                      <div class="mock-item">
+                        <div>
+                          <strong class="mock-student" data-key="STU-004" data-name="Taylor K. (Demo)">STU-004</strong>
+                          <span>V6 Needs +50% quiz moderation</span>
+                        </div>
+                        <span class="tag warn">V6</span>
+                      </div>
+                      <div class="mock-item">
+                        <div>
+                          <strong class="mock-student" data-key="STU-009" data-name="Alex R. (Demo)">STU-009</strong>
+                          <span>H Ambiguous rule → teacher hold</span>
+                        </div>
+                        <span class="tag info">Hold</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 2: Extension Timeline -->
+              <div class="mock-panel" data-mock-panel="timeline">
+                <div class="mock-card">
+                  <div class="mock-card-head">
+                    <h3>Individualized Window Timeline · <span class="mock-student" data-key="STU-001" data-name="Jordan M. (Demo)">STU-001</span></h3>
+                    <span class="tag mint">+100% work window</span>
+                  </div>
+                  <div class="tl-row">
+                    <div><strong>Budget Worksheet</strong><div style="font-size:11px;color:var(--muted)">Personal Finance</div></div>
+                    <div class="tl-track"><div class="tl-win" style="left:6%;width:38%"></div><div class="tl-ext" style="left:44%;width:38%"></div></div>
+                    <span class="tag good">On time (+4d)</span>
+                  </div>
+                  <div class="tl-row">
+                    <div><strong>Paycheck Check</strong><div style="font-size:11px;color:var(--muted)">Personal Finance</div></div>
+                    <div class="tl-track"><div class="tl-win" style="left:10%;width:34%"></div><div class="tl-ext" style="left:44%;width:34%"></div></div>
+                    <span class="tag bad">V1 · Remove -2 pts</span>
+                  </div>
+                  <div class="tl-row">
+                    <div><strong>Unit 3 Quiz</strong><div style="font-size:11px;color:var(--muted)">In-class timed (60m)</div></div>
+                    <div class="tl-track"><div class="tl-win" style="left:16%;width:45%"></div></div>
+                    <span class="tag warn">V6 · Set 90m timer</span>
+                  </div>
+                  <div class="tl-row">
+                    <div><strong>Capstone Brief</strong><div style="font-size:11px;color:var(--muted)">Long-term project</div></div>
+                    <div class="tl-track"><div class="tl-win" style="left:8%;width:54%"></div><div class="tl-ext" style="left:62%;width:14%"></div></div>
+                    <span class="tag info">+2 coordinated days</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 3: Grading Queue -->
+              <div class="mock-panel" data-mock-panel="grading">
+                <div class="q-card">
+                  <div class="q-top">
+                    <div>
+                      <strong class="mock-student" data-key="STU-002 · Spreadsheet Basics" data-name="Maya L. (Demo) · Spreadsheet Basics">STU-002 · Spreadsheet Basics</strong>
+                      <div style="font-size:11.5px;color:var(--muted)">Drafted score: 18 / 20 · Submitted inside extended window</div>
+                    </div>
+                    <span class="tag mint" id="q-status-1">Awaiting teacher OK</span>
+                  </div>
+                  <div class="q-badges">
+                    <span class="tag good">✓ Neutral feedback lint passed</span>
+                    <span class="tag info">✓ Late label cleared</span>
+                  </div>
+                  <div class="q-actions">
+                    <span style="font-size:12px;color:var(--muted)">"Strong formula setup on rows 4–8; double-check total tax cell."</span>
+                    <div class="q-btns">
+                      <button class="btn primary xs" type="button" data-q-action="approve" data-q-target="q-status-1">Approve</button>
+                      <button class="btn xs" type="button" data-q-action="hold" data-q-target="q-status-1">Hold</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="q-card">
+                  <div class="q-top">
+                    <div>
+                      <strong class="mock-student" data-key="STU-006 · Ethics Reflection" data-name="Sam P. (Demo) · Ethics Reflection">STU-006 · Ethics Reflection</strong>
+                      <div style="font-size:11.5px;color:var(--muted)">Proposed 0 / 10 · Blocked until blank page image is verified</div>
+                    </div>
+                    <span class="tag warn" id="q-status-2">Image check required</span>
+                  </div>
+                  <div class="q-badges">
+                    <span class="tag bad">Guardrail: Zero requires visual confirmation</span>
+                  </div>
+                  <div class="q-actions">
+                    <span style="font-size:12px;color:var(--muted)">Prevents false-zero deductions on pasted or embedded fonts.</span>
+                    <div class="q-btns">
+                      <button class="btn dark xs" type="button" data-q-action="confirm" data-q-target="q-status-2">Confirm Page &amp; Approve</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: Learning Gaps -->
+              <div class="mock-panel" data-mock-panel="gaps">
+                <div class="mock-card">
+                  <div class="mock-card-head">
+                    <h3>AP CS Principles · Post-Grading Skill Gaps</h3>
+                    <span class="tag mint">Worst missed first</span>
+                  </div>
+                  <div class="gap-row">
+                    <div><strong>Binary &amp; Overflow Limits</strong><div style="font-size:11px;color:var(--muted)">Q4 &amp; Q7 · 28 responses · 3 extra-time blanks separated</div></div>
+                    <span class="tag bad" style="justify-self:end">54% missed</span>
+                    <div class="gap-bar-track"><div class="gap-bar-fill" style="width:54%"></div></div>
+                  </div>
+                  <div class="gap-row">
+                    <div><strong>Packet Routing &amp; Redundancy</strong><div style="font-size:11px;color:var(--muted)">Q9 · 28 responses · 1 possible time issue</div></div>
+                    <span class="tag warn" style="justify-self:end">41% missed</span>
+                    <div class="gap-bar-track"><div class="gap-bar-fill" style="width:41%"></div></div>
+                  </div>
+                  <div class="gap-row">
+                    <div><strong>Conditional Logic Trace</strong><div style="font-size:11px;color:var(--muted)">Q2 · 28 responses · Ready for quick warm-up</div></div>
+                    <span class="tag good" style="justify-self:end">16% missed</span>
+                    <div class="gap-bar-track"><div class="gap-bar-fill" style="width:16%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mock-caption">
+            <span>Interactive workspace preview · 100% synthetic placeholder data</span>
+            <span>Try switching tabs or toggling <strong>Keys</strong> &amp; <strong>Blur</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modules">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-kicker">Three Integrated Modules</span>
+          <h2>One calm desk from accommodation plan to reteach plan</h2>
+          <p>Built for real classroom schedules—where percent extensions, school holidays, attendance flags, and Canvas quizzes all intersect.</p>
+        </div>
+
+        <div class="modules-grid">
+          <article class="glass-card mod-card">
+            <div class="mod-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Accommodations Monitor</h3>
+            <p>Computes exact individualized deadlines and monitors Canvas submissions for compliance gaps before grades finalize.</p>
+            <ul class="feat-list">
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>True unit math:</strong> percent of work window, class periods, instructional or calendar days, hours, and project-specific rules.</span></li>
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Bell-schedule &amp; holiday aware:</strong> respects section due dates, no-school days, and existing Canvas overrides.</span></li>
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>IEP &amp; 504 meeting logs:</strong> tracks Offered / Used / Declined supports with per-student CSV export.</span></li>
+            </ul>
+          </article>
+
+          <article class="glass-card mod-card">
+            <div class="mod-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Human-in-the-Loop Grading</h3>
+            <p>Prepares draft answer keys, scores, and Canvas fixes while keeping teachers in absolute control of every update.</p>
+            <ul class="feat-list">
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Pre-grading hard-stop lists:</strong> flags open extension windows before a grading batch starts.</span></li>
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Rendered-image zero guard:</strong> blocks zero or blank deductions until confirmed on the rendered page image.</span></li>
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Attendance-aware policy:</strong> surfaces excused absences vs. uncleared flags with one-click teacher overrides.</span></li>
+            </ul>
+          </article>
+
+          <article class="glass-card mod-card">
+            <div class="mod-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 3 5-6"/></svg>
+            </div>
+            <h3>Learning Gaps</h3>
+            <p>Turns post-grading item scores into clear reteach priorities without misreading extended-time blanks as mastery gaps.</p>
+            <ul class="feat-list">
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Ranked skill breakdown:</strong> surfaces worst-missed questions and skills per assignment or whole course.</span></li>
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Time-issue separation:</strong> flags blanks from students with extra-time accommodations separately from conceptual misses.</span></li>
+              <li><span class="feat-bullet" aria-hidden="true">✓</span><span><strong>Unpublished Canvas drafts:</strong> stages optional mini-lessons as unpublished pages until you review and publish.</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rules">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-kicker">Compliance Rules Engine</span>
+          <h2>Seven built-in checks (V1–V6 &amp; Hold) so nothing slips through</h2>
+          <p>Select any rule code below to inspect what triggers it and the exact Canvas fix TeacherDesk prepares for your approval.</p>
+        </div>
+
+        <div class="glass-card rules-box">
+          <div class="rule-pills" role="tablist" aria-label="Compliance rule codes">
+            <button class="rule-pill active" type="button" role="tab" aria-selected="true" data-rule="V1">V1 · Late Deduction</button>
+            <button class="rule-pill" type="button" role="tab" aria-selected="false" data-rule="V2">V2 · Missing / Zero</button>
+            <button class="rule-pill" type="button" role="tab" aria-selected="false" data-rule="V3">V3 · Wrong Late Label</button>
+            <button class="rule-pill" type="button" role="tab" aria-selected="false" data-rule="V4">V4 · Ungraded Past Grace</button>
+            <button class="rule-pill" type="button" role="tab" aria-selected="false" data-rule="V5">V5 · Missing Override</button>
+            <button class="rule-pill" type="button" role="tab" aria-selected="false" data-rule="V6">V6 · Quiz Timer</button>
+            <button class="rule-pill" type="button" role="tab" aria-selected="false" data-rule="H">H · Teacher Hold</button>
+          </div>
+
+          <div class="rule-detail" id="rule-detail">
+            <div>
+              <span class="tag bad" id="rule-badge">Violation V1</span>
+              <h3 id="rule-title">Late deduction inside extended window</h3>
+              <p id="rule-trigger">Triggered when Canvas applies a late point penalty (<code>points_deducted &gt; 0</code>) even though the student submitted on or before their individualized extended due date.</p>
+              <p id="rule-risk"><strong>Why it matters:</strong> Automated Canvas late policies penalize the base class due date unless a matching student override is already in place.</p>
+            </div>
+            <div class="rule-fix-card">
+              <div>
+                <div class="rule-fix-label">Prepared Teacher Action</div>
+                <div class="rule-fix-title" id="rule-fix-title">Remove late deduction &amp; clear late penalty status</div>
+              </div>
+              <div class="rule-fix-note" id="rule-fix-note">Queues a neutral status update (<code>extended</code>) and restores penalized points—never writing to Canvas until you click Approve.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-kicker">Closed-Loop Workflow</span>
+          <h2>Four predictable steps—you hold the final key</h2>
+          <p>Designed around a strict teacher-approval boundary so automation handles tedious verification while educators make every judgment call.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="glass-card step-card">
+            <div class="step-num">1</div>
+            <h3>Read-only Canvas check</h3>
+            <p>TeacherDesk pulls current assignments, due-date overrides, quiz moderations, and submission states without modifying a single score.</p>
+          </div>
+          <div class="glass-card step-card">
+            <div class="step-num">2</div>
+            <h3>Compute &amp; flag</h3>
+            <p>The deterministic rules engine recalculates every student's window, catches V1–V6 flags, and puts ambiguous rules on Hold.</p>
+          </div>
+          <div class="glass-card step-card">
+            <div class="step-num">3</div>
+            <h3>Teacher reviews &amp; approves</h3>
+            <p>Inspect side-by-side diffs, confirm zeros on rendered pages, edit neutral feedback, and approve or reject each item.</p>
+          </div>
+          <div class="glass-card step-card">
+            <div class="step-num">4</div>
+            <h3>Apply &amp; confirm</h3>
+            <p>Only approved updates go out to Canvas, and the next read-only check confirms each fix landed cleanly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="wrap">
+        <div class="privacy-banner">
+          <div class="privacy-head">
+            <span class="mock-pill">FERPA-First Architecture</span>
+            <h2>Built so student privacy is the <em>default</em>, not an add-on</h2>
+            <p>From display keys to feedback linting and domain isolation, TeacherDesk protects sensitive student records at every layer.</p>
+          </div>
+
+          <div class="privacy-grid">
+            <div class="priv-item">
+              <h3>Privacy Keys &amp; Screen-Share Blur</h3>
+              <p>Shows hashed student keys (<code>STU-xxx</code>) by default, with a one-click blur toggle when presenting or sharing your screen.</p>
+            </div>
+            <div class="priv-item">
+              <h3>Neutral Feedback Linter</h3>
+              <p>Automatically blocks comments containing IEP, 504, disability, or accommodation terms from ever reaching student-facing Canvas feedback.</p>
+            </div>
+            <div class="priv-item">
+              <h3>PIN-Gated App Subdomain</h3>
+              <p>Your live workspace runs separately at <code>ecr.teacherdesk.org</code> behind PIN authentication, HTTP-only cookies, and <code>no-store</code> caching headers.</p>
+            </div>
+            <div class="priv-item">
+              <h3>Non-Plan Students Filtered Out</h3>
+              <p>Accommodations monitoring drops rows for students without active plans during import and uses counts-only status digests.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div class="glass-card contact-aside">
+          <span class="section-kicker">Get Started</span>
+          <h2>Ready for calmer IEP &amp; 504 grading?</h2>
+          <p>Interested in piloting TeacherDesk for your classroom, Special Education team, or school Canvas instance? Send a quick note and we'll follow up directly.</p>
+
+          <div class="ecr-callout">
+            <strong>Already an ECR educator?</strong>
+            <p>Your production workspace is live on its dedicated subdomain. Sign in directly with your workspace PIN.</p>
+            <a class="btn dark sm" href="https://ecr.teacherdesk.org" target="_blank" rel="noopener">Sign In at ecr.teacherdesk.org →</a>
+          </div>
+        </div>
+
+        <div class="glass-card form-card">
+          <form name="teacherdesk-inquiry" method="POST" action="/thank-you" netlify-honeypot="bot-field" data-netlify="true" id="inquiry-form">
+            <input type="hidden" name="form-name" value="teacherdesk-inquiry">
+            <input type="hidden" name="subject" value="New TeacherDesk Inquiry from %{siteName} (%{submissionId})">
+            <p class="sr-honeypot">
+              <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Full Name</label>
+                <input class="input" id="f-name" name="name" type="text" required autocomplete="name" placeholder="Alex Rivera">
+              </div>
+
+              <div class="field">
+                <label for="f-email">Work Email</label>
+                <input class="input" id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@school.org">
+              </div>
+
+              <div class="field">
+                <label for="f-school">School or District</label>
+                <input class="input" id="f-school" name="school" type="text" autocomplete="organization" placeholder="Example Charter High School">
+              </div>
+
+              <div class="field">
+                <label for="f-role">Role</label>
+                <select class="input" id="f-role" name="role">
+                  <option value="Classroom Teacher">Classroom Teacher</option>
+                  <option value="Special Ed / 504 Coordinator">Special Ed / 504 Coordinator</option>
+                  <option value="Department Chair">Department Chair</option>
+                  <option value="School / District Admin">School / District Admin</option>
+                  <option value="IT / Canvas Admin">IT / Canvas Admin</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="f-interest">What are you looking for?</label>
+                <select class="input" id="f-interest" name="interest">
+                  <option value="Request a Demo">Request a Demo</option>
+                  <option value="Classroom Pilot">Classroom Pilot</option>
+                  <option value="School-Wide Rollout">School-Wide Rollout</option>
+                  <option value="General Question">General Question</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="f-message">Message</label>
+                <textarea class="input" id="f-message" name="message" required placeholder="Tell us about your Canvas workflow, grade level, or questions..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-foot">
+              <span class="form-note">Please never share real student names or IDs in this form.</span>
+              <button class="btn primary" type="submit" id="form-submit-btn">Send Inquiry →</button>
+            </div>
+
+            <div class="form-status ok" id="form-status" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-row">
+      <div class="foot-brand">
+        <span class="brand-mark sm" aria-hidden="true">TD</span>
+        <span>TeacherDesk · FERPA-first accommodations &amp; grading workspace</span>
+      </div>
+      <div class="foot-links">
+        <a href="#modules">Modules</a>
+        <a href="#rules">Rules</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+        <a href="https://ecr.teacherdesk.org" target="_blank" rel="noopener">Open App (ecr.teacherdesk.org)</a>
+        <span>© 2026 TeacherDesk</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
